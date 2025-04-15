@@ -14,4 +14,6 @@ let myname;
   dont use var because of global scope . so use mostly const or let
 */
 console.table([accountEmail,accountId,accountPassword,accountCity,myname]);
-
+/*
+console.table([all the variable in the form of table])
+*/
