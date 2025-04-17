@@ -21,7 +21,7 @@ let boolInLogging = Boolean(loggedIn)
    0=>false;   1=>true
    ""=>false    "Harshit"=>true
 */
-let someNumber = 33
+let someNumber = false
 let someString = String(someNumber)
 console.log(someString);
 console.log(typeof someString);
