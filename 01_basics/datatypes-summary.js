@@ -37,17 +37,24 @@ console.log(typeof outsideTemp);
 //console.log(typeof outsideTemp);
 
 let pi;
-console.log(typeof pi);
+// console.log(typeof pi);
 
 
 let oneSymbol = Symbol('123')
-console.log(typeof oneSymbol);
+//console.log(typeof oneSymbol);
 
 let anotherone = Symbol('123')
 //console.log(oneSymbol===anotherone);
 
 const bigInteger = 12345463773893n;
-console.log(typeof bigInteger);
+//console.log(typeof bigInteger);
 
 
 //console.log(typeof bigInteger);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primtive) ,Heap(Non Primitive)
+ let MYname= "harshit"
+ let another = MYname
+ console.log(another);
