@@ -13,4 +13,17 @@ const hundread = 1000000;
 
 
 // +++++++++++ Maths ++++++++++++++
+console.log(Math);
+console.log(Math.abs(-4));
+console.log(Math.round(4.3));
+console.log(Math.round(4.7));
+
+console.log(Math.ceil(4.2));
+console.log(Math.floor(4.2));
+console.log(Math.pow(2,4));
+
+
+
+
+
 
