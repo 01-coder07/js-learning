@@ -1,3 +1,6 @@
+//object singleton
+//Object.create()
+
 //object literal
 
 const obj ={
