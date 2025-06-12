@@ -37,11 +37,32 @@ const users=[
     },
 ]
 // console.log(users[0].email);
-console.log(tinder);
+// console.log(tinder);
 // console.log(Object.keys(tinder));
 // console.log(Object.values(tinder));
 // console.log(Object.entries(tinder));
-console.log(tinder.hasOwnProperty('isLoggedIn'));
+// console.log(tinder.hasOwnProperty('isLoggedIn'));
+
+const course={
+    courseName:"Js",
+    price:1299,
+    CourseInstructor:'Harshit'
+};
+//course.courseName
+//De-Structuring
+const {courseName:Name}=course;
+console.log(Name);
+
+//json
+// {
+//     courseName:"Js",
+//     price:1299,
+//     CourseInstructor:'Harshit'   
+// }
+//[
+    
+
+//]
 
 
 
