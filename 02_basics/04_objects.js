@@ -24,4 +24,24 @@ const obj2 = {
     4:"d"
 };
 const obj3 = {...obj1,...obj2};
-console.log(obj3);
+// console.log(obj3);
+
+const users=[
+    {
+        id:1,
+        email:"h@gmail.com",
+    },
+    {
+        id:1,
+        email:"h@gmail.com",
+    },
+]
+// console.log(users[0].email);
+console.log(tinder);
+// console.log(Object.keys(tinder));
+// console.log(Object.values(tinder));
+// console.log(Object.entries(tinder));
+console.log(tinder.hasOwnProperty('isLoggedIn'));
+
+
+
