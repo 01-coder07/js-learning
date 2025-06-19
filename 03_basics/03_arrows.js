@@ -23,6 +23,11 @@ const add = (num1,num2) =>{
   console.log(num1 + num2);
 }
 add(2,3)
+
+//const addTwo = (num1,num2) =>num1+num2
+
+//const addTwo = (num1,num2) =>(num1+num2)
+
 // other way to denote arrow function
-// () => ()  ::: Here its implicit, we don not write return here
+// () => ()  ::: Here its implicit, since scope is open so return is required.
 //objects () => ({   })
