@@ -14,8 +14,8 @@ buttons.forEach((button)=>{
 button.addEventListener('click',(e)=>{
   if(button.id===e.target.id){
   body.style.backgroundColor = e.target.id;
-  }
-})
+  };
+});
 });
 ```
 ## Project -2
