@@ -1,6 +1,7 @@
 
 Project  Link: https://stackblitz.com/edit/dom-project-chaiaurcode-lfmtadvr?file=1-colorChanger%2Fchaiaurcode.js
 
+Background-color change ;
 Solution for project1:
  let body = document.querySelector('body');
 let buttons = document.querySelectorAll('.button');
