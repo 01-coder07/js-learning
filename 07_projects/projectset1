@@ -1,1 +1,13 @@
 
+Project  Link: https://stackblitz.com/edit/dom-project-chaiaurcode-lfmtadvr?file=1-colorChanger%2Fchaiaurcode.js
+
+Solution for project1:
+ let body = document.querySelector('body');
+let buttons = document.querySelectorAll('.button');
+buttons.forEach((button)=>{
+button.addEventListener('click',(e)=>{
+  if(button.id===e.target.id){
+  body.style.backgroundColor = e.target.id;
+  }
+})
+})
