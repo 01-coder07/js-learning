@@ -13,7 +13,8 @@ button.addEventListener('click',(e)=>{
 })
 })
 
-SOLUTION PROJECT -2:
+SOLUTION PROJECT -2: BMI using DOM
+
 let form =document.querySelector('form');
 
 form.addEventListener('submit',(e)=>{
