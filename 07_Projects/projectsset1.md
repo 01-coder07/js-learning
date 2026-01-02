@@ -16,7 +16,7 @@ button.addEventListener('click',(e)=>{
   body.style.backgroundColor = e.target.id;
   }
 })
-})
+});
 ```
 ## Project -2
 ```javascript
