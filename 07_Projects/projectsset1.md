@@ -1,7 +1,7 @@
 # Project Related to DOM
 
 ## Project Link
-[click Here]https://stackblitz.com/edit/dom-project-chaiaurcode-fw18gigt?file=3-DigitalClock%2Findex.html
+[click Here] https://stackblitz.com/edit/dom-project-chaiaurcode-fw18gigt?file=3-DigitalClock%2Findex.html
 
 # Solution Code
 
