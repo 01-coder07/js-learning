@@ -53,3 +53,107 @@ setInterval(function(){
 },1000);
 ```
 
+## Project -4
+``` 
+javascript
+ let randomNumber = parseInt(Math.random() * 100 +1);
+
+
+const guessSlot = document.querySelector('.guesses');
+const guessLeft = document.querySelector('.lastResult');
+const submitGuess = document.querySelector('#subt');
+const lowOrHigh = document.querySelector('.lowOrHi');
+const userInput = document.querySelector('#guessField');
+const startOver = document.querySelector('.resultParas');
+
+const p = document.createElement('p');
+
+let prevGuess = [];
+let flag = true;
+let noOfGuess = 1;
+
+if(flag){
+  submitGuess.addEventListener('click',function(e){
+    e.preventDefault();
+    let guess = parseInt(userInput.value);
+    // console.log(guess);
+    validateGuess(guess);
+  })
+}
+
+function validateGuess(guess){
+ if(isNaN(guess)){
+  alert('Please enter valid number');
+ }
+ else if (guess < 1){
+   alert('Enter number greater than or equal to 1');
+ }
+ else if(guess > 100){
+   alert('Enter number less than or equal to 100');
+ }
+ else{
+   prevGuess.push(guess);
+   if(noOfGuess===11){
+     cleanUpGuess(guess);
+     displayMessage(`Game over: Random number was ${randomNumber}`);
+     endGame();
+   }
+   else{
+     cleanUpGuess(guess);
+     checkGuess(guess);
+   }
+ }
+}
+
+function checkGuess(guess){
+  if(guess < randomNumber ){
+    displayMessage('Higher');
+  }
+  else if(guess > randomNumber){
+    displayMessage('Lower');
+  }
+  else{
+    displayMessage('Congrats!!  You Guessed The Number');
+    endGame();
+  }
+}
+
+function cleanUpGuess(guess){
+    userInput.value = '';
+    guessSlot.innerHTML += ` ${guess} , `;
+    noOfGuess++;
+    guessLeft.innerHTML = `${11-noOfGuess}`;
+}
+
+function displayMessage(message){
+    lowOrHigh.innerHTML = `<h2>${message}</h2>`;
+}
+
+function endGame(){
+ userInput.value='';
+ userInput.setAttribute('disabled','');
+ p.classList.add('button');
+ p.innerHTML = `<h2 id = 'startgame'>Start new game</h2>`
+ startOver.appendChild(p);
+ flag = false;
+ startGame();
+}
+
+function startGame(){
+   const newGame = document.querySelector('#startgame');
+   newGame.addEventListener('click',function(e){
+   randomNumber = parseInt(Math.random() * 100 +1);
+   prevGuess = [];
+   noOfGuess = 0;
+   guessSlot.innerHTML = '';
+   guessLeft.innerHTML = `${10-noOfGuess}`;
+   userInput.removeAttribute('disabled');
+   startOver.removeChild(p);
+   flag = true;
+   })
+}
+
+
+
+
+```
