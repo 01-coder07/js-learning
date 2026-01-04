@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            /* background-color: #fff; */
+        }
+    </style>
+</head>
+<body style="background-color:black;">
+    <div class="button">
+        <button style="color:rgb(5, 46, 81);" id ='center'>Center</button>
+    </div>
+    <script>
+      document.getElementById('center').addEventListener('click',(e)=>{
+         console.log(e.timeStamp);
+         console.log(e.clientX);
+         console.log(e.clientY);
+         console.log(e.screenX);
+         console.log(e.screenY);
+         
+      },false);
+    </script>
+</body>
+</html>
