@@ -43,7 +43,7 @@ const promiseFour = new Promise(function(resolve,reject){
         reject('ERROR:Something went wrong');
       }
     },1000)
-})
+});
 
 promiseFour
 .then((user)=>{
